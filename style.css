@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar-container {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar-brand .logo {
+    width: 120px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white!important;
+}
+
+.profile-container {
+    padding: 5px;
+    background-color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+.profile-container .propic {
+    width: 25px;
+    border-radius: 50%;
+}
+
+/* searchbar */
+
+.hero {
+    height: 50%;
+}
+
+.searchbar {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    background-color: white;
+    height: 60px;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.input-container input {
+    border: none;
+}
+
+button.search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E41D56;
+    border: none;
+}
+
+.go-near {
+    top: 55%;
+    left: 5%;
+    color: white;
+    position: absolute;
+}
+
+.go-near h1 {
+    font-size: 120px;
+}
+
+.place img {
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.place-text {
+    font-size: 12px;
+}
