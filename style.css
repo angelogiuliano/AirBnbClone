@@ -96,3 +96,34 @@ button.search {
 .place-text {
     font-size: 12px;
 }
+
+
+/* !CARDS */
+
+.contenitore {
+    margin-top: 20px;
+}
+
+.cards img {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-card h4,p {
+    margin: 5px;
+}
