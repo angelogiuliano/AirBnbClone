@@ -5,12 +5,19 @@
     overflow-x: hidden;
 }
 
+.distance {
+    margin-bottom: 120px;
+}
+
+nav {
+    background-color: white;
+}
+
 .logo {
     width: 100px;
 }
 
 .navbar-container {
-    /* position: fixed; */
     width: 100%;
     background-size: cover;
     box-shadow: 0px 0px 1px black;
@@ -77,6 +84,9 @@ button.search {
     background-color: #E41D56;
     border: none;
 }
+
+/* !CAROUSEL */
+
 
 
 
@@ -190,3 +200,11 @@ button.search {
     padding-top: 50px;
 }
 
+.final {
+    border-top: 1px solid rgb(110, 109, 109);
+    margin: 0 60px;
+}
+
+.final-li {
+    margin-right: 15px;
+}
