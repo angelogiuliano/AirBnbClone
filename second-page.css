@@ -120,4 +120,63 @@ button.search {
     margin-top: 10px;
 }
 
+/* !VIAGGI */
+
+.contenitore-viaggi {
+    margin-top: 100px;
+    padding: 0 60px;
+}
+
+.contenitore-viaggi h2 {
+    padding-bottom: 15px;
+}
+
+.link {
+    border-bottom: 1px solid rgb(182, 181, 181);
+}
+
+.link li a {
+    color: rgb(110, 109, 109);
+    text-decoration: none;
+}
+
+.link li a:hover {
+    color: black;
+}
+
+.link li {
+    padding-right: 10px;
+}
+
+ ul {
+    list-style-type: none;
+}
+
+.contenitore-link {
+    margin-bottom: 30px;
+}
+
+.meta-viaggio {
+    margin-bottom: 15px;
+
+}
+
+.meta-viaggio p {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.meta-viaggio span {
+    color: gray;
+}
+
+/* !Footer */
+
+.footer {
+    padding-left: 60px;
+    width: 100%;
+    padding-top: 50px;
+    border-top: 1px solid rgb(190, 189, 189);
+    gap: 80px;
+}
 
