@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .logo {
     width: 100px;
 }
@@ -28,7 +35,7 @@ nav li a {
 .profile-container {
     padding: 5px;
     width: 60px;
-    height: 35px;
+    height: 100%;
     border-radius: 25px;
     border: 1px solid gray;
 }
@@ -41,11 +48,6 @@ nav li a {
 /* !Searchbar */
 
 .searchbar {
-    /* top: 50px; */
-    /* left: 25%; */
-    /* background-color: white; */
-    /* height: 60px; */
-    /* width: 50%; */
     border-radius: 30px;
     border: 1px solid gray;
 }
@@ -88,9 +90,13 @@ button.search {
     border-radius: 10px;
 }
 
+.card:hover img {
+    filter: brightness(45%);
+}
+
 .card {
     padding: 0;
-    width: 350px;
+    width: 380px;
     border: none;
     margin-bottom: 30px;
 }
@@ -103,6 +109,11 @@ button.search {
     opacity: 0.8;
     right: 10px;
     top: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.hearth-icon:hover {
+    color: red;
 }
 
 .card h6 {
