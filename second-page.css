@@ -89,7 +89,7 @@ button.search {
     border-radius: 10px;
 }
 
-.card:hover img {
+.carousel-inner:hover {
     filter: brightness(45%);
 }
 
@@ -98,6 +98,17 @@ button.search {
     width: 380px;
     border: none;
     margin-bottom: 30px;
+}
+
+.carousel-indicators button {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    height: fit-content;
 }
 
 .hearth-icon {
@@ -122,6 +133,7 @@ button.search {
 /* !VIAGGI */
 
 .contenitore-viaggi {
+    border-bottom: 1px solid rgb(190, 189, 189);
     margin-top: 100px;
     padding: 0 60px;
 }
@@ -174,9 +186,7 @@ button.search {
 .footer {
     overflow: hidden;
     padding-left: 60px;
-    width: 100%;
+    width: 75%;
     padding-top: 50px;
-    border-top: 1px solid rgb(190, 189, 189);
-    gap: 80px;
 }
 
