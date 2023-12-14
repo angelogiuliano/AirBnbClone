@@ -1608,6 +1608,14 @@ for (let i = 0; i < cardInfo.length; i++) {
       cardInfo[i].picture_urls[x];
   }
   for (let y = 0; y < cards.length; y++) {
+    cards[y].setAttribute('id', cardInfo[y].id)
+    console.log(cards[y].attributes.id.value);
     cards[y].children[2].innerText = cardInfo[y].street;
   }
 }
+
+const params = new URLSearchParams(document.location.search) 
+const id = params.get("id")
+document.querySelector("h1").innerText = id
+ 
+ 
