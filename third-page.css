@@ -25,10 +25,13 @@ nav {
 }
 
 img {
-    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
+.img-sinistra, .img-destra {
+    padding: 0;
+}
 
 .navbar-brand .logo {
     width: 120px;
