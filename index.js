@@ -1602,20 +1602,32 @@ let cardInfo = [
 let carouselItem = document.getElementsByClassName("carousel-item");
 let cards = document.getElementsByClassName("card");
 
-for (let i = 0; i < cardInfo.length; i++) {
-  for (let x = 0; x < cardInfo[i].picture_urls.length; x++) {
-    carouselItem[i].children[0].attributes.src.value =
-      cardInfo[i].picture_urls[x];
-  }
-  for (let y = 0; y < cards.length; y++) {
-    cards[y].setAttribute('id', cardInfo[y].id)
-    console.log(cards[y].attributes.id.value);
-    cards[y].children[2].innerText = cardInfo[y].street;
+let cardsImages = function() {
+  for (let i = 0; i < cardInfo.length; i++) {
+    for (let x = 0; x < cardInfo[i].picture_urls.length; x++) {
+      carouselItem[i].children[0].attributes.src.value =
+        cardInfo[i].picture_urls[x];
+    }
+    for (let y = 0; y < cards.length; y++) {
+      cards[y].setAttribute('id', cardInfo[y].id)
+      cards[y].children[2].innerText = cardInfo[y].street;
+    }
   }
 }
 
-const params = new URLSearchParams(document.location.search) 
-const id = params.get("id")
-document.querySelector("h1").innerText = id
- 
- 
+cardsImages()
+
+let clickedId;
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener('click', function() {
+    clickedId = ''
+    console.log(cards[i].attributes.id);
+    clickedId = cards[i].attributes.id
+
+      for (let x = 0; x < cardInfo.length; x++) {
+        if (clickedId.value == cardInfo[x].id) {
+          console.log(cardInfo[x].name, cardInfo[x].street) ;
+        }
+      }
+  })
+}
