@@ -101,12 +101,12 @@ button.search {
 /* !CARDS */
 
 .contenitore {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .cards img {
-    width: 80px;
-    aspect-ratio: 1/1;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
 }
 
