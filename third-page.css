@@ -88,6 +88,10 @@ button.search {
     border: none;
 }
 
+button.overflow-hidden {
+    font-size: 12px;
+}
+
 
 /* !TITLE */
 
@@ -262,4 +266,8 @@ button.search {
     border-radius: 10px;
     font-weight: bold;
     background: none;
+}
+
+#user-propic {
+    border-radius: 50%;
 }

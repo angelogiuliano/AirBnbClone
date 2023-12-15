@@ -1601,12 +1601,13 @@ let cardInfo = [
 
 let carouselItem = document.getElementsByClassName("carousel-item");
 let cards = document.getElementsByClassName("card");
+let carouselInner = document.getElementsByClassName("carousel-inner");
 
 let cardsImages = function() {
   for (let i = 0; i < cardInfo.length; i++) {
     for (let x = 0; x < cardInfo[i].picture_urls.length; x++) {
       carouselItem[i].children[0].attributes.src.value =
-        cardInfo[i].picture_urls[x];
+      cardInfo[i].picture_urls[x];
     }
     for (let y = 0; y < cards.length; y++) {
       cards[y].setAttribute('id', cardInfo[y].id)
@@ -1619,15 +1620,9 @@ cardsImages()
 
 let clickedId;
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener('click', function() {
+    carouselInner[i].addEventListener('click', function() {
     clickedId = ''
-    console.log(cards[i].attributes.id);
     clickedId = cards[i].attributes.id
-
-      for (let x = 0; x < cardInfo.length; x++) {
-        if (clickedId.value == cardInfo[x].id) {
-          console.log(cardInfo[x].name, cardInfo[x].street) ;
-        }
-      }
+    window.open('./third-page.html?id=' + clickedId.value)
   })
 }
