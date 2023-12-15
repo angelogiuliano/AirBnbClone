@@ -7,6 +7,7 @@
 /* navbar */
 
 .navbar-container {
+    z-index: 999;
     position: fixed;
     background-color: black;
     width: 100%;
@@ -15,6 +16,7 @@
 }
 
 img {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -78,7 +80,8 @@ button.search {
 }
 
 .go-near {
-    top: 20%;
+    z-index: 999;
+    top: 230px;
     left: 50px;
     color: white;
     position: absolute;
@@ -120,6 +123,7 @@ button.search {
 }
 
 .cards {
+    width: 350px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -127,4 +131,8 @@ button.search {
 
 .container-card h4,p {
     margin: 5px;
+}
+
+h4 {
+    font-size: 15px;
 }

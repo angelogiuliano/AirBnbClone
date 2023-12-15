@@ -159,6 +159,7 @@ button.overflow-hidden {
     border: 1px solid rgb(213, 211, 211);
     border-radius: 10px;
     height: 400px;
+    width: 400px;
     right: 0;
     box-shadow: -2px 2px 2px 2px #e3e3e3;
 }
@@ -272,7 +273,6 @@ button.overflow-hidden {
 .background-grigio p a {
     color: black;
     font-weight: bold;
-
 }
 
 .testo-contenitore2 {
