@@ -31,6 +31,11 @@ img {
 
 .img-sinistra, .img-destra {
     padding: 0;
+    max-height: 600px
+}
+
+.img-sinistra img {
+    height: 100%;
 }
 
 .img-destra img {
@@ -41,10 +46,6 @@ img {
 
 .img-destra div {
     justify-content: space-between;
-}
-
-.img-destra div img {
-    width: 50%;
 }
 
 .navbar-brand .logo {
