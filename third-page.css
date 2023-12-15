@@ -154,6 +154,68 @@ button.overflow-hidden {
     margin-inline: 10px;
 }
 
+.prenota {
+    position: absolute;
+    border: 1px solid rgb(213, 211, 211);
+    border-radius: 10px;
+    height: 400px;
+    right: 0;
+    box-shadow: -2px 2px 2px 2px #e3e3e3;
+}
+
+.span-bold {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.check {
+    border: 1px solid rgb(213, 211, 211);
+    height: 120px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.check p {
+    margin: 0;
+}
+
+.check-in,
+.check-out {
+    border-bottom: 1px solid rgb(213, 211, 211);
+}
+
+.check-in {
+    border-right: 1px solid rgb(213, 211, 211);
+}
+
+.button-prenota {
+    margin-top: 15px;
+}
+
+.button-prenota button {
+    border-radius: 10px;
+    background: #E41D56;
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-weight: bold;
+    border: none;
+}
+
+.totale-notti {
+    width: 90%;
+    border-bottom: 1px solid rgb(213, 211, 211);
+}
+
+.totale-notti a {
+    color: black;
+}
+
+.costo {
+    width: 90%;
+    margin-top: 10px;
+}
+
 .user img {
     width: 60px;
     height: 60px;
