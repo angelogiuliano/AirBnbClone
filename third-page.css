@@ -33,6 +33,20 @@ img {
     padding: 0;
 }
 
+.img-destra img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.img-destra div {
+    justify-content: space-between;
+}
+
+.img-destra div img {
+    width: 50%;
+}
+
 .navbar-brand .logo {
     width: 120px;
 }
